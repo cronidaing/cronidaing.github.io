@@ -113,14 +113,14 @@
                     <img src="assets/img/transparente.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Second slide label</h5>
-                      <p>Some representative placeholder content for the second slide.</p>
+                      <p>Nuestra garantía de satisfacción total respalda nuestro trabajo, y cultivamos relaciones basadas en la confianza y el compañerismo.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="assets/img/transparente.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Third slide label</h5>
-                      <p>Some representative placeholder content for the third slide.</p>
+                      <p>Valoramos la sostenibilidad y trabajamos con responsabilidad para un futuro mejor.</p>
                     </div>
                   </div>
                 </div>
@@ -140,8 +140,9 @@
             <div class="container px-5">
                 <div class="row gx-5 justify-content-center">
                     <div class="col-xl-8">
-                        <div class="h2 fs-1 text-white mb-4">"An intuitive solution to a common problem that we all face, wrapped up in a single app!"</div>
-                        <img src="assets/img/tnw-logo.svg" alt="..." style="height: 3rem" />
+                        <div class="h2 fs-1 text-white mb-4">"Nuestro enfoque es brindar soluciones integrales y vanguardistas, guiados por el
+                            principio ‘Better, not Bigger’."</div>
+                        <img src="assets/img/isologo-cronida-blanco.svg" alt="Iologo blanco Cronida" style="height: 3rem" />
                     </div>
                 </div>
             </div>
@@ -287,52 +288,35 @@
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                        <form method="post" action="https://forms.un-static.com/forms/fd80561086d32a73c89e2ae59e8e06b1767dbabb">
+                            <div class="form-group row">
+                              <label for="inputName" class="col-sm-2 col-form-label">Nombre</label>
+                              <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputName" placeholder="Please enter your name">
+                              </div>
                             </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            <div class="form-group row">
+                              <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                              <div class="input-group col-sm-2">
+                                <div class="input-group-prepend"><i class="input-group-text fa fa-envelope"></i></div>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                              </div>
                             </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            <div class="form-group row">
+                              <label for="inputMessage" class="col-sm-2 col-form-label">Mensaje</label>
+                              <div class="col-sm-10">
+                                <textarea name="inputMessage" cols="40" rows="8" class="form-control"></textarea>
+                              </div>
                             </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            <div class="form-group row">
+                              <div class="col-sm-10">
+                                <button type="submit" class="btn btn-primary">Send</button>
+                              </div>
                             </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
+                            <div class="text-center">
+                              <p><small>(Powered by <a rel="nofollow" href="Un-static Forms">Un-static Forms</a>)</small></p>
                             </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
-                        </form>
+                          </form>
                     </div>
                 </div>
             </div>
